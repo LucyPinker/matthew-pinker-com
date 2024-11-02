@@ -1,11 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'styles/gradient.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  @font-face {
+    font-family: 'Neue Metana';
+    src: url('/fonts/NeueMetana-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Neue Metana';
+    src: url('/fonts/NeueMetana-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+body {
+  color: #FFFFFF;
+  height: 100vh;
+  font: 1rem 'Neue Metana', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,16 +35,6 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {

@@ -9,7 +9,7 @@ export default function Page() {
         <main class="flex h-screen flex-col md:flex-row">
           <div className="w-full md:w-1/3 h-[75vh] p-10 ml-10">
             <Image
-              src="/images/MWP.jpg"
+              src="/matthew-pinker-com/images/MWP.jpg"
               alt="Matt Pinker"
               width={600}
               height={600}

@@ -3,28 +3,28 @@ import Image from 'next/image';
 const iconData = [
   {
     href: "https://soundcloud.com/cylindric_music",
-    src: "/images/soundcloud.png",
+    src: "/matthew-pinker-com/images/soundcloud.png",
     alt: "Soundcloud",
     width: 24,
     height: 24,
   },
   {
     href: "https://www.instagram.com/_cylindric/",
-    src: "/images/instagram.png",
+    src: "/matthew-pinker-com/images/instagram.png",
     alt: "Instagram",
     width: 22,
     height: 22,
   },
   {
     href: "https://ra.co/dj/cylindric",
-    src: "/images/resident_advisor.png",
+    src: "/matthew-pinker-com/images/resident_advisor.png",
     alt: "RA",
     width: 22,
     height: 22,
   },
   {
     href: "https://open.spotify.com/artist/2lqjGkphmzAU9MPzkymxT8?si=u_pXiv3HQt-kzxekl9Z9Gw",
-    src: "/images/spotify.png",
+    src: "/matthew-pinker-com/images/spotify.png",
     alt: "Spotify",
     width: 22,
     height: 22,

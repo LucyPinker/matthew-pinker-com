@@ -1,23 +1,26 @@
 export default function Home() {
+
+  const basePath = '/matthew-pinker-com';
+
   const items = [
     {
-      href: "/about",
+      href: `${basePath}/about`,
       title: "About",
     },
     {
-      href: "/live",
+      href: `${basePath}/live`,
       title: "Live",
     },
     {
-      href: "/music",
+      href: `${basePath}/music`,
       title: "Music",
     },
     {
-      href: "/contact",
+      href: `${basePath}/contact`,
       title: "Contact",
     },
     {
-      href: "/gallery",
+      href: `${basePath}/gallery`,
       title: "Gallery",
     }
   ];

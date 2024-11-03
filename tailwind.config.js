@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         metana: ['Neue Metana', 'sans-serif'],
+        helmet: ['Helmet', 'sans-serif'],
       }
     },
   },

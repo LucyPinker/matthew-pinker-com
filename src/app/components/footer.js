@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <footer className="text-white p-4 fixed bottom-0 w-full">
       <div className="container mx-auto flex justify-center items-center">
-        <p className="m-4">© {new Date().getFullYear()} Matthew Pinker. All rights reserved.</p>
+        <p className="m-4">© {new Date().getFullYear()} Matt Pinker. All rights reserved.</p>
         <div className="flex space-x-4 m-4">
           {iconData.map((icon, index) => (
             <a

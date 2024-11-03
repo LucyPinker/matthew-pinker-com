@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',    // This tells Next.js to export the app as a static site
-  trailingSlash: true, // Optional: Adds a trailing slash to the end of all routes
+  output: 'export',               // for static export
+  trailingSlash: true,            // optional: keeps routes consistent
+  images: { unoptimized: true }   // disables image optimization
 };
 
 export default nextConfig;

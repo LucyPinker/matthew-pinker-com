@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',               // for static export
-  trailingSlash: true,            // optional: keeps routes consistent
-  images: { unoptimized: true }   // disables image optimization
+  output: 'export',
+  trailingSlash: true,
+  images: { unoptimized: true },
+  basePath: '/matthew-pinker-com',
 };
 
 export default nextConfig;

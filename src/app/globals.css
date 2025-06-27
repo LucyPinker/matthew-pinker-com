@@ -7,33 +7,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
-  @font-face {
-    font-family: 'Neue Metana';
-    src: url('/fonts/NeueMetana-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Neue Metana';
-    src: url('/fonts/NeueMetana-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Neue Metana';
-    src: url('/fonts/NeueMetana-Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-  }
 }
 
 body {
-  color: #FFFFFF;
+  color: #CBD4DB;
   height: 100vh;
-  font: 1rem 'Neue Metana', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

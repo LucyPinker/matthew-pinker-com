@@ -5,16 +5,25 @@ export default function Page() {
   return (
     <div>
       <Heading text="Live" />
-      <main className="p-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <main className="p-10 max-w-5xl mx-auto">
+        <div className="bg-white bg-opacity-40 p-6 rounded-md shadow-sm max-h-[600px] overflow-y-auto scroll-thin">
+          <div className="grid grid-cols-3 font-semibold mb-4 text-left">
+            <span>Event</span>
+            <span>Location</span>
+            <span>Date</span>
+          </div>
+
           {performances.map(({ venue, city, date }, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-50 p-4 rounded shadow"
+              className={`grid grid-cols-3 py-2 text-left text-sm sm:text-base ${index !== performances.length - 1
+                  ? 'border-b border-gray-300/40'
+                  : ''
+                }`}
             >
-              <p className="text-gray-700 font-semibold">{venue}</p>
-              <p className="text-gray-600">{city}</p>
-              <p className="text-gray-500">{date}</p>
+              <span className="text-gray-900">{venue}</span>
+              <span className="text-gray-700">{city}</span>
+              <span className="text-gray-700">{date}</span>
             </div>
           ))}
         </div>

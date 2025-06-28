@@ -62,7 +62,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="max-w-lg mx-auto p-8 bg-white bg-opacity-40 rounded-md shadow-lg">
+    <div className="max-w-lg mx-auto p-8 mt-8 bg-white bg-opacity-40 rounded-md shadow-lg tracking-wide">
       {flashMessage && (
         <div
           className={`p-4 mb-4 text-sm font-medium rounded ${flashMessage.type === "success" ? "bg-green-200 text-green-800" : "bg-red-200 text-red-800"

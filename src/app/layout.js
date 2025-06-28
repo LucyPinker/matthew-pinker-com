@@ -2,7 +2,7 @@ import "./globals.css";
 import "./styles/gradient.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
-import { Karla } from '@next/font/google';
+import { Karla } from 'next/font/google'
 
 const karla = Karla({
   subsets: ['latin'],

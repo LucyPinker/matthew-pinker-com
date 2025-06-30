@@ -21,7 +21,7 @@ export default function Page() {
                   : ''
                 }`}
             >
-              <span className="text-gray-900">{venue}</span>
+              <span className="text-gray-900 font-semibold">{venue}</span>
               <span className="text-gray-700">{city}</span>
               <span className="text-gray-700">{date}</span>
             </div>

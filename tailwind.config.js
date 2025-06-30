@@ -12,10 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        metana: ['Neue Metana', 'sans-serif'],
-        helmet: ['Helmet', 'sans-serif'],
-      }
+      colors: {
+        baseWhite: '#CBD4DB',
+      },
     },
   },
   plugins: [],

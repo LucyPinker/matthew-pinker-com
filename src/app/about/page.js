@@ -6,8 +6,8 @@ export default function Page() {
     <div>
       <Heading text="About" />
       <div className="flex justify-center">
-        <main className="flex flex-col md:flex-row w-[50vw] h-[70vh] bg-white bg-opacity-40 p-12 rounded-md shadow-sm">
-          <div className="flex flex-col items-center w-full md:w-1/2 ">
+        <main className="flex flex-col md:flex-row w-[50vw] h-[72vh] bg-white bg-opacity-40 p-12 rounded-md shadow-sm">
+          <div className="flex flex-col items-center w-full md:w-1/2">
             <div className="w-auto">
               <Image
                 src="/images/MWP.jpg"

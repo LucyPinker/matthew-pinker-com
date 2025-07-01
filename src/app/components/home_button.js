@@ -7,11 +7,12 @@ const HomeButton = () => {
     </svg>
   );
 
-  const notHome = usePathname() !== '/';
+  const pathname = usePathname();
+  const notHome = pathname !== '/' && !pathname.includes('/matthew-pinker-com');
 
   return (
     <div className={`absolute top-8 left-8 ${notHome ? 'visible' : 'invisible'}`}>
-      <a href="/">
+      <a href="/matthew-pinker-com">
         <HomeIcon />
       </a>
     </div>

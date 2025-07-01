@@ -10,7 +10,7 @@ export default function Page() {
           <div className="flex flex-col items-center w-full md:w-1/2">
             <div className="w-auto">
               <Image
-                src="/images/MWP.jpg"
+                src="/matthew-pinker-com/images/MWP.jpg"
                 alt="Matt Pinker headshot"
                 width={400}
                 height={400}

@@ -2,12 +2,14 @@
 import { usePathname } from 'next/navigation';
 import HomeButton from './home_button';
 
+const prefix = '/matthew-pinker-com'; // same as your assetPrefix
+
 const items = [
-  { href: `/about`, title: "About" },
-  { href: `/live`, title: "Live" },
-  { href: `/music`, title: "Music" },
-  { href: `/contact`, title: "Contact" },
-  { href: `/gallery`, title: "Gallery" }
+  { href: `${prefix}/about`, title: "About" },
+  { href: `${prefix}/live`, title: "Live" },
+  { href: `${prefix}/music`, title: "Music" },
+  { href: `${prefix}/contact`, title: "Contact" },
+  { href: `${prefix}/gallery`, title: "Gallery" }
 ];
 
 const normalize = (path) => path.replace(/\/$/, '');

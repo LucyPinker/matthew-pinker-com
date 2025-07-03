@@ -6,18 +6,19 @@ export default function Page() {
     <div>
       <Heading text="About" />
       <div className="flex justify-center">
-        <main className="flex flex-col md:flex-row w-[50vw] h-[72vh] bg-white bg-opacity-40 p-12 rounded-md shadow-sm">
-          <div className="flex flex-col items-center w-full md:w-1/2">
-            <div className="w-auto">
+        <main className="flex flex-col md:flex-row w-full max-w-5xl bg-white bg-opacity-40 p-6 pb-16 md:pb-10 lg:pb-12 md:p-10 lg:p-12 rounded-md shadow-sm mx-4 my-8 overflow-y-auto max-h-[80vh] md:max-h-none">
+          <div className="flex flex-col items-center md:items-start md:w-1/2">
+            <div className="w-[300px] md:w-[400px]">
               <Image
                 src="/matthew-pinker-com/images/MWP.jpg"
                 alt="Matt Pinker headshot"
                 width={400}
                 height={400}
-                className="rounded opacity-75"
+                className="rounded opacity-75 w-full h-auto"
+                sizes="(max-width: 767px) 300px, 400px"
               />
             </div>
-            <div className="mt-3 w-[400px] leading-relaxed text-left text-gray-800 font-light tracking-wide">
+            <div className="mt-3 max-w-[90%] leading-relaxed text-left text-gray-800 font-light tracking-wide">
               <p>
                 My name is Matt, I&#39;m a sound designer and composer based in Manchester, UK. Growing up with a classical
                 training in piano and exposure to a wide range of music; I began listening to electronic music
@@ -25,7 +26,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-full md:w-1/2 space-y-6 pl-5 leading-relaxed font-light tracking-wide h-full text-right text-gray-800">
+          <div className="flex flex-col md:w-1/2 space-y-6 pl-0 md:pl-5 leading-relaxed font-light tracking-wide h-full text-right text-gray-800 mt-6 md:mt-0">
             <div>
               <p>
                 A musical upbringing eventually led to a bachelor degree in music followed by a masters specialising in electronic
@@ -35,7 +36,7 @@ export default function Page() {
                 more rhythmic electronic music under the <a href="https://on.soundcloud.com/xtKsYu2d8dB79Rdu6" className="underline hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">Cylindric</a> alias.
               </p>
             </div>
-            <div>
+            <div className="pb-8 md:pb-0">
               <p>
                 Coming from a sound art background where non-traditional sonic sources are sculpted and composed into music,
                 I am interested in exploring the intersection of sound FX, design, and music to create a cohesive,

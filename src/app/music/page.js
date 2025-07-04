@@ -17,11 +17,11 @@ export default function Page() {
       <main className="flex justify-center p-6 md:p-10">
         <div className="flex flex-col md:flex-row w-full max-w-5xl h-auto md:h-[65vh] bg-white bg-opacity-40 rounded-md shadow-sm overflow-hidden tracking-wide font-light">
 
-          <nav className="flex md:flex-col md:w-40 bg-transparent border-b md:border-b-0 md:border-r">
+          <nav className="flex md:flex-col md:w-40 bg-transparent">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                className={`px-4 py-3 text-left border-l-4 ${activeTab === tab.id
+                className={`px-4 py-3 text-left ${activeTab === tab.id
                   ? 'bg-baseWhite bg-opacity-90 font-semibold text-gray-900'
                   : 'border-transparent text-gray-700 hover:bg-gray-200'
                   }`}
